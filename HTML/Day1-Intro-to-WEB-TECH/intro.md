@@ -11,3 +11,45 @@
 
 ## Websites and Web Apps
 *Websites and Web Apps both are collection of multiple webpages. Generally Websites are static in nature and Web Apps are dynamic in nature. A website contains multiple data such as Images, videos, text etc. It provides a global representation of any information or data.*
+
+## Web
+*Web is the super entity which contains multiple data or resources in interconnected forms.*
+
+## Network
+*Network is a medium which is used to communicate between one or more devices.*
+
+- LAN: LAN stands for Local Area Network. It consists of small scale connections or networks between devices. e.g. Home Router, wired networks.
+
+- MAN: MAN stands for MetroPolitan Area Network. It covers the networks between cities to cities to communicate with the devices.
+
+- WAN: WAN stands for Wide Area Network. It establishes connections or networks between continents and countries. e.g. Internet.
+
+## Internet
+*Internet stands for Interconnected Networks it is a network of network. It allows us to access the data which is available globally in web.*
+
+## How Website works?
+*Websites can be accessed using Browsers. Whenever we search any websites it will request **DNS** to change the URL into **IP addresses** This IP addresses will be sent to the server as HTTP or HTTPS request. Server will pass the same request to the database. If the data is available datbase will return the data in the form of files to the server and server will send the data back to the clients.*
+
+## Browser
+*Browser is a tool which is used to show the data visually and it is the medium by which we can search the data which is available globally.*
+
+## Browser Engine
+*Browser engine is a component which resides in the browser itself and responsible for executing the files or codes received from the server.*
+
+## Websites and WebPages
+*Website is a collection of multiple webpages and Webpage is a single HTML document. Websites has been categorized in two ways.*
+
+- Static Website: A website where the contents remains same even after the reload of the entire application known as Static Websites. e.g. Wikipedia, College Websites, Educational Websites..
+
+- Dynamic Websites: It is also known as Web Apps and here the content will get changed generally after each and every reload.
+
+## SPA & MPA
+*SPA stands for Single Page application and it is a kind of application where the contents of the webpage is getting updated without any reload. It is generally fast as compared to Multiple Page Application. e.g. LinkedIn, Instagram, Facebook, etc..*
+
+*MPA stands for Multiple Page Applications and it is a kind of application where the each and every user actions willl create a reload and after that the contents will get updated. e.g. Flipkart, Amazon, etc..*
+
+## Client and Server
+*Client and Server can be Devices where the devices communicates in between to share some reources. Client is a device which will be requesting for some data and server is a device which will be sending some response to the client devices.*
+
+## DNS
+*DNS stands for Domain Name System or Server which is responsible for translating the URL into IP addresses while searching anything in the browser.*
