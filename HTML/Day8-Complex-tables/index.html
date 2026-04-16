@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complex Tables</title>
+  </head>
+  <body>
+    <center>
+      <table border cellspacing="10px">
+        <caption>
+          Complex Table
+        </caption>
+        <thead>
+          <tr>
+            <th>Sl.No.</th>
+            <th>Category</th>
+            <th>Items</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="3">1</td>
+            <td rowspan="3">Clothing</td>
+            <td>Jeans</td>
+            <td rowspan="2" style="padding: 7px">5000/.</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Shirt</td>
+          </tr>
+          <tr>
+            <td rowspan="2">68,000</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Electronics</td>
+            <td>Phone</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Health</td>
+            <td>Protein</td>
+            <td>5000</td>
+          </tr>
+          <tr>
+            <td colspan="3">Price</td>
+            <td>78000/.</td>
+          </tr>
+        </tbody>
+      </table>
+    </center>
+
+    <center>
+      <table border="">
+        <thead>
+          <tr>
+            <th rowspan="2" colspan="2">CI</th>
+            <th rowspan="2">All genders</th>
+            <th>By gender</th>
+          </tr>
+
+          <tr>
+            <td>
+              <table border="">
+                <thead>
+                  <tr>
+                    <th>Males</th>
+                    <th>Females</th>
+                  </tr>
+                  <tr>
+                    <td>9215604</td>
+                    <td>4512358</td>
+                  </tr>
+                </thead>
+              </table>
+            </td>
+          </tr>
+        </thead>
+
+        <tfoot>
+          <tr>
+            <th>Rural</th>
+            <td>6521458</td>
+            <td>4215389</td>
+            <td>4152348</td>
+          </tr>
+        </tfoot>
+      </table>
+    </center>
+  </body>
+</html>
