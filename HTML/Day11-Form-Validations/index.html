@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validations in HTML</title>
+  </head>
+  <body>
+    <h1>Form Validations in HTML</h1>
+    <form>
+      <label for="username">Enter Username</label>
+      <input
+        type="text"
+        placeholder="Enter Username"
+        id="username"
+        required
+        minlength="3"
+        maxlength="30"
+      />
+
+      <br /><br />
+
+      <label for="password">Enter Password</label>
+      <input
+        type="password"
+        placeholder="Enter Password"
+        id="password"
+        required
+        pattern="[A-Za-z0-9]{8,12}"
+      />
+      <br /><br />
+
+      <label for="age">Age</label>
+      <input
+        type="number"
+        name="age"
+        id="age"
+        min="18"
+        max="50"
+        placeholder="Enter age"
+      />
+
+      <br /><br />
+      <label for="">Ready to Join Immediately</label>
+      <input type="text" disabled />
+      <br /><br />
+
+      <label for="aadhaar">Aadhaar Number</label>
+      <input type="text" readonly value="1234,5678, 9109" />
+      <br /><br />
+
+      <label for="gender">Select Gender</label>
+      <input type="radio" name="gender" value="male" id="male" checked />
+      <label for="male">Male</label>
+      <input type="radio" name="gender" value="female" id="female" />
+      <label for="female">Female</label>
+      <input type="radio" name="gender" value="others" id="others" />
+      <label for="others">Others</label>
+
+      <br /><br />
+      <label for="skills">Skills</label>
+      <input type="checkbox" name="skills" value="java" id="java" />
+      <label for="java">Java</label>
+      <input
+        type="checkbox"
+        name="skills"
+        value="javascript"
+        id="javascript"
+        checked
+        disabled
+      />
+      <label for="javascript">Javascript</label>
+      <input type="checkbox" name="skills" value="Python" id="Python" />
+      <label for="Python">Python</label>
+      <input type="checkbox" name="skills" value="golang" id="golang" />
+      <label for="golang">golang</label>
+      <input type="checkbox" name="skills" value="C" id="C" />
+      <label for="C">C</label>
+      <input type="checkbox" name="skills" value="Fast API" id="Fast API" />
+      <label for="Fast API">Fast API</label>
+
+      <br /><br />
+      <label for="volume">Increase or Decrease the volume</label>
+      <input type="range" name="volume" id="volume" value="0" step="10" />
+
+      <br /><br />
+      <label for="resume">Upload your resume</label>
+      <input type="file" name="resume" id="resume" accept=".pdf" />
+      <br /><br />
+      <label for="resume">Upload your image</label>
+      <input type="file" name="resume" id="resume" accept=".jpeg" />
+
+      <br /><br />
+      <label for="feedback">Write your feedback</label>
+      <textarea
+        name="feedback"
+        id="feedback"
+        rows="5"
+        cols="50"
+        minlength="500"
+      ></textarea>
+
+      <input type="submit" />
+      <button>Mybuttontag</button>
+      <input type="reset" value="Reset" />
+      <input type="button" value="Dummy BTN" />
+    </form>
+  </body>
+</html>
