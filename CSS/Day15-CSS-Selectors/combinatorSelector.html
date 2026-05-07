@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Combinator Selector</h1>
+    <ol>
+      <dl>
+        <li>
+          <dt>Descendent Selector</dt>
+          <dd>
+            It is a combinator selector used to target the direct as well as
+            indirect child of an element. To use this selector first we need to
+            write parent element then the elements needs to target with space.
+          </dd>
+          <dd>
+            <mark style="background-color: lightblue"
+              >e.g. ul li properties:value</mark
+            >
+            <br />
+            <mark>
+              This will target the all list items used inside the unordered list
+              whether it is ordered list items as well.
+            </mark>
+          </dd>
+        </li>
+        <li>
+          <dt>Child Selector</dt>
+          <dd>
+            This selector falls under Combinator selector and it targets all
+            direct child elements of a parent element. To use this selector we
+            need to use greater than symbol &gt; after parent element then the
+            elements needs to target.
+          </dd>
+          <dd>
+            <mark style="background-color: lightblue">e.g. ul>li</mark>
+            <br />
+            In the above syntax it will target only the list items which is
+            present inside the unordered list.
+          </dd>
+        </li>
+
+        <li>
+          <dt>Adjacent Sibling Selector</dt>
+          <dd>
+            This selector comes under Combinator selector and used to select or
+            target the nearest sibling elements. To use this we need to use plus
+            symbol.
+          </dd>
+          <dd>
+            <mark style="background-color: lightblue">
+              e.g.: h1 + h2 {properties: value}
+            </mark>
+            In the above code it will target only the h2 element whihc is
+            present just after h1.
+          </dd>
+        </li>
+
+        <li>
+          <dt>General Sibling Selector</dt>
+          <dd>
+            It also comes under combinator selector and it targets the entire
+            sibling elements not only the nearest sibling of an element. To use
+            this we need to use tilde symbol.
+          </dd>
+          <dd>
+            <mark style="background-color: lightblue">
+              e.g.: h1 ~ h3 {properties: value;}
+            </mark>
+            Here the entire h3 sibling will be selected which is a sibling of
+            h1.
+          </dd>
+        </li>
+      </dl>
+    </ol>
+  </body>
+</html>

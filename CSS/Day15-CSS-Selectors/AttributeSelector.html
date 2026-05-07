@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      [type] {
+        background-color: lightsalmon;
+        color: lightslategray;
+      }
+
+      [type="password"] {
+        background-color: lightsteelblue;
+        color: darkblue;
+      }
+
+      [href*="i"] {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Attribute selectors in CSS</h1>
+    <p>
+      Attribute selector is a way to select HTML elements based on their
+      attributes we can use attribute selectors in various ways. To use
+      attribute selector we need to use square bracket inside that we can write
+      attribute name. It will select the entire element having the same
+      attribute name. We can write attribute name along with value inside square
+      bracket: it will target only the elements which is having same attribute
+      along with values.
+    </p>
+    <form>
+      <label for="username">Enter Username</label>
+      <input type="text" placeholder="enter username" id="username" />
+      <label for="password">Enter password</label>
+      <input
+        type="password"
+        placeholder="enter password"
+        name="password"
+        id="password"
+      />
+    </form>
+
+    <a href="https://www.linkedin.com">Visit linkedin</a>
+  </body>
+</html>

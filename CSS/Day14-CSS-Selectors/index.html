@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Simple Selectors  */
+      h1 {
+        color: darkblue;
+      }
+      /* #myfirstId {
+        color: red;
+      }
+      .myclass {
+        color: green;
+      }
+      .shanu {
+        background-color: lightskyblue;
+      }
+
+      dd {
+        font-size: 16px;
+      }
+      * {
+        font-style: italic;
+      } */
+      body {
+        background-color: lightblue;
+      }
+      dt {
+        color: red;
+      }
+      dd {
+        background-color: lightskyblue;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 2px darkblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Selectors</h1>
+    <ol>
+      <li>Simple Selector</li>
+      <ol>
+        <dl>
+          <li id="myfirstId">
+            <dt>ID</dt>
+            <dd>
+              ID selector is a simple selector and it selects the elements based
+              on their id attribute value. It uses # symbol as a prefix to the
+              attribute value in CSS. It will target the entire elements having
+              same id in the HTML file.
+              <br />
+              <mark
+                >ID is unique in nature. Id should have only one value not
+                multiple</mark
+              >
+            </dd>
+          </li>
+          <li class="myclass shanu">
+            <dt>Class</dt>
+            <dd>
+              Class Selector is a simple selector only and it is used to target
+              the elements based on their class names. There may be multiple
+              values inside class attribute. We need to use dot symbol as a
+              prefix to target the elements based on their class name. It will
+              target the entire elements having same class name in the HTML
+              file.
+            </dd>
+          </li>
+
+          <li class="shanu myclass">
+            <dt>Tagname</dt>
+            <dd>
+              Tagname falls under simple selector, It helps to target the
+              elements based on their tag names. It will select the entire
+              element having same name in the file.
+            </dd>
+          </li>
+
+          <li id="myfirstId">
+            <dt>Grouping</dt>
+            <dd>
+              Grouping selector comes under Simple selector and it helps to
+              target the multiple elements at the same time by separating with
+              comma (,). It will select the entire element whichever has been
+              targeted in the HTML file.
+            </dd>
+          </li>
+
+          <li>
+            <dt>Universal</dt>
+            <dd>
+              This selector targets the entire element inside an HTML file. The
+              styles properties written inside universal selector will be
+              applicable for all elements. Using * symbol we can use universal
+              selector .
+            </dd>
+          </li>
+        </dl>
+      </ol>
+    </ol>
+  </body>
+</html>

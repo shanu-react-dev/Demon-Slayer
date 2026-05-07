@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      p::first-line {
+        color: red;
+        font-size: x-large;
+      }
+      p::first-letter {
+        color: blue;
+        font-size: 100px;
+      }
+
+      p::selection {
+        background-color: lightskyblue;
+        color: navy;
+      }
+
+      p::before {
+        content: "🩵🩵🩵";
+      }
+      p::after {
+        content: "🐒🐒🐒🐒🐒";
+      }
+
+      li::marker {
+        content: "👉";
+      }
+      [type="radio"] {
+        accent-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pseudo Element Selector in HTML</h1>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed est pariatur
+      illo vel, obcaecati quam quasi! Doloribus quibusdam sint harum explicabo
+      veniam quae dicta excepturi repellat, omnis cumque natus nostrum,
+      distinctio maxime asperiores eos autem ratione quam culpa? Commodi quas
+      vel, qui, fugiat consequuntur quos similique dolores sunt deserunt
+      veritatis omnis ipsum, magnam distinctio officiis magni nemo ad delectus
+      modi ullam aut cumque laborum ducimus. Facilis pariatur, molestiae beatae
+      dignissimos ad sequi asperiores voluptates deserunt, officia quae suscipit
+      inventore iure exercitationem commodi consequuntur dolor quam! In maxime
+      voluptate temporibus, ab, vero perspiciatis officia dolores exercitationem
+      commodi voluptas dolorum doloremque voluptates.
+    </p>
+
+    <ol>
+      <li>BMW M4</li>
+      <li>Dodge Demon SRT</li>
+      <li>Koennigsegg</li>
+      <li>Lamborghini</li>
+      <li>Bugatti Chiron</li>
+      <li>Porsche 911</li>
+      <li>Porsche Carrera GT</li>
+      <li>Dodge Charger</li>
+      <li>Alpha Romeo</li>
+    </ol>
+
+    <form>
+      <label for="gender">Select Gender</label>
+      <input type="radio" name="gender" id="Male" />
+      <label for="Male">Male</label>
+      <input type="radio" name="gender" id="Female" />
+      <label for="Female">Female</label>
+      <input type="radio" name="gender" id="Others" />
+      <label for="Others">Others</label>
+    </form>
+  </body>
+</html>
