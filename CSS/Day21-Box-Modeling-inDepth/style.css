@@ -1,0 +1,39 @@
+h1 {
+  border: 3px solid red;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+  border: 3px solid red;
+  border-radius: 10px 0;
+  background-color: black;
+  color: #fff;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+button:hover {
+  background-color: transparent;
+  color: black;
+}
+
+input {
+  border: 1px solid gray;
+  outline: none;
+  padding: 10px;
+  margin-left: 100px;
+}
+
+input:hover {
+  border: 1px solid orange;
+}
+
+input:focus {
+  border: 1px solid blue;
+}

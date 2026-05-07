@@ -35,6 +35,5 @@ div {
   height: 200px;
   width: 200px;
   border: 20px solid red;
-  border-radius: 200px;
-  border-image: ;
+  /* border-radius: 200px; */
 }
