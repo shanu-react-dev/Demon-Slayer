@@ -1,0 +1,66 @@
+.card {
+  height: 500px;
+  width: 400px;
+  border: 2px solid rgba(0, 0, 0, 0.159);
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.card > .imageBox {
+  height: 60%;
+  width: 90%;
+  /* border: 2px solid green; */
+  margin: 18px;
+}
+
+.card > .imageBox > img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  margin: 35px 80px 65px 55px;
+}
+
+.userDetails {
+  height: 15%;
+  width: 90%;
+  /* border: 2px solid coral; */
+  margin: 18px;
+}
+.userDetails > p {
+  text-align: center;
+  margin: 0;
+}
+.userDetails > .username {
+  margin: 10px auto;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.userDetails > .name {
+  color: #c9c5c5f5;
+}
+.btn {
+  width: 90%;
+  height: 10%;
+  /* border: 2px solid yellow; */
+  margin: 18px;
+}
+
+.btn > button {
+  height: 100%;
+  width: 100%;
+  background-color: blue;
+  color: #fff;
+  border: 2px solid blue;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn > button:hover {
+  background-color: white;
+  color: blue;
+}
