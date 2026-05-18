@@ -1,0 +1,74 @@
+.box {
+  border: 2px solid black;
+  /* position: relative; */
+}
+img {
+  height: 200px;
+  width: 200px;
+}
+
+#secImg {
+  position: static; /*Default Property for each and every element*/
+  /* top: 100px;
+  left: 100px;
+  bottom: 0; */
+}
+
+#secImg {
+  /* position: relative; */
+  /* left: 50px; */
+  /* top: 20px; */
+  /* bottom: -100px; */
+}
+
+/* #secImg {
+  position: absolute;
+  top: 10px;
+} */
+
+#secImg {
+  /* position: absolute; */
+  /* top: 10px; */
+  /* right: 0; */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.box1 {
+  height: 100vh;
+  width: 100%;
+  border: 10px solid red;
+}
+
+.box2 {
+  height: 2000px;
+  width: 100%;
+  border: 10px solid lightseagreen;
+}
+.thirdBox {
+  height: 100vh;
+  width: 100%;
+  border: 5px solid green;
+}
+
+#thirdImg {
+  /* position: fixed;
+  right: 0;
+  bottom: 0; */
+}
+
+#thirdImg {
+  /* position: sticky;
+  top: 0; */
+  /* right: 0; */
+  /* bottom: 0; */
+  /* position: fixed; */
+}
+
+#myImg {
+  position: sticky;
+  bottom: 0;
+}

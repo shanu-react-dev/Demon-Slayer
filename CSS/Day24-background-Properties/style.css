@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  height: 300px;
+  width: 300px;
+  border: 2px solid black;
+  margin-top: 10px;
+  /* background-color: darkblue; */
+
+  /* background: linear-gradient(90deg, darkblue, pink, maroon); */
+
+  /* background: linear-gradient(
+    to top right,
+    lightblue 20%,
+    lightpink 50%,
+    lightseagreen 90%
+  ); */
+
+  /* background: radial-gradient(at top left, blue, red, yellow);
+  border-radius: 50%; */
+
+  background-image: url("https://cdn.pixabay.com/photo/2026/02/15/22/26/22-26-13-116_1280.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  /* background-size: 100% 100%; */
+  background-size: cover;
+  /* background-position: center; */
+  /* background-position: -80px; */
+  background-position: center;
+}
+
+.image {
+  height: 500px;
+  width: 500px;
+  border: 3px solid green;
+  background-image: url(./Screenshot\ 2026-05-11\ 132854.png);
+
+  background-size: 200%;
+  border-radius: 100%;
+  background-position: -113px -27px;
+}
