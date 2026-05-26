@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.box {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  background-color: yellow;
+  animation-name: moveBox;
+  animation-timing-function: ease-out;
+  animation-duration: 4s;
+  /* animation-iteration-count: 4; */
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes moveBox {
+  from {
+    top: 0;
+    left: 0;
+  }
+  to {
+    top: 0;
+    left: calc(100vw - 200px);
+  }
+}

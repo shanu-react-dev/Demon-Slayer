@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <!-- Basic Icons -->
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Filled Icons -->
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css"
+      rel="stylesheet"
+    />
+    <!-- Brand Icons -->
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Typed JS Library -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"
+      integrity="sha512-tQQXRDB2wEmuJGtFrmmoFYzNTq8StA1XJrfO0OQbbTxd9G0CwaTDL6/C1y805IlvBVrMwOqob1kf6r/2U5XXVg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- CSS Part -->
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      :root {
+        --maincolor: #320245d0;
+        --textColor: #d8b8ef;
+        --btnColor: #56b6c6;
+        --fontfamily: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      body {
+        background-color: var(--maincolor);
+      }
+      nav {
+        height: 70px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        box-shadow: 0 0 10px var(--textColor);
+      }
+      .logo {
+        width: 20%;
+        height: 100%;
+        color: var(--textColor);
+        font-size: 28px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .logo > span {
+        color: #fff;
+        margin-right: 10px;
+      }
+      .navlist {
+        height: 100%;
+        width: 40%;
+      }
+      .navlist > ul {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        list-style: none;
+      }
+      ul li {
+        padding: 4px;
+      }
+      ul a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 600;
+      }
+      ul > li:hover {
+        transform: translateY(-2px);
+        box-shadow: 2px 2px 2px black;
+        border-radius: 4px;
+      }
+      nav > .btn {
+        height: 100%;
+        width: 13%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .btn button {
+        padding: 10px 25px;
+        border-radius: 7px;
+        transition: 0.7s;
+        background-color: var(--textColor);
+        color: var(--maincolor);
+        font-weight: 700;
+        border: 2px solid var(--maincolor);
+        cursor: pointer;
+      }
+      .btn button:hover {
+        background-color: transparent;
+        color: #fff;
+      }
+
+      /* Home Page starts here */
+      main {
+        height: auto;
+        width: 100%;
+      }
+
+      main > #home {
+        height: calc(100vh - 70px);
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+      #home > .details,
+      .image {
+        height: 70%;
+        width: 34%;
+        /* background-color: yellow; */
+      }
+
+      #home > .details {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+      }
+
+      .details > span {
+        background-color: var(--textColor);
+        border-radius: 4px;
+        color: #fff;
+        width: 20%;
+        padding: 3px 5px;
+      }
+      .details > h1 {
+        font-size: 50px;
+        line-height: 70px;
+        color: white;
+      }
+
+      .details > h1 > span {
+        color: var(--textColor);
+      }
+
+      .details > p {
+        font-size: 18px;
+        text-align: justify;
+        line-height: 25px;
+        color: #fff;
+      }
+
+      .details > .btnBox {
+        display: flex;
+        gap: 20px;
+      }
+      .details button {
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.7s;
+      }
+
+      .details button:first-child {
+        background-color: var(--textColor);
+        color: var(--maincolor);
+        border: 2px solid var(--textColor);
+        font-weight: 600;
+      }
+
+      .details button:first-child:hover {
+        background-color: transparent;
+        color: var(--textColor);
+      }
+
+      .details button:last-child {
+        background-color: transparent;
+        color: #fff;
+        border: 2px solid var(--maincolor);
+        font-weight: 600;
+      }
+
+      .details button:last-child:hover {
+        background-color: var(--maincolor);
+        color: var(--textColor);
+      }
+
+      .iconBox {
+        display: flex;
+        gap: 10px;
+      }
+
+      .iconBox > div {
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        padding: 5px;
+        font-size: 25px;
+        box-shadow: 2px 2px 2px var(--textColor);
+        /* border: 2px solid blue; */
+        display: flex;
+        align-items: center;
+        transition: 0.7s;
+        justify-content: center;
+        cursor: pointer;
+      }
+      .iconBox > div:hover {
+        transform: scale(1.2);
+      }
+      .iconBox a {
+        color: var(--textColor);
+      }
+
+      #home > .image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .image > img {
+        border-radius: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo"><span>kumar</span>Shanu</div>
+      <div class="navlist">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="btn">
+        <a href=""
+          ><button>Download CV <i class="bx bx-file-detail"></i></button
+        ></a>
+      </div>
+    </nav>
+
+    <main>
+      <section id="home">
+        <div class="details">
+          <span>Shanu Kumar</span>
+          <h1>I'm <br /><span id="profession"></span></h1>
+          <p>
+            Experienced frontend developer with a passion for creating visually
+            stunning and user-friendly websites.
+          </p>
+          <div class="btnBox">
+            <button>Hire Me</button>
+            <button>Download CV <i class="bx bx-file-detail"></i></button>
+          </div>
+
+          <div class="iconBox">
+            <div>
+              <a href="https://www.instagram.com/mr________sk________"
+                ><i class="bxl bx-instagram"></i
+              ></a>
+            </div>
+            <div>
+              <a href="https://www.linkedin.com/in/kr-amar"
+                ><i class="bxl bx-linkedin"></i
+              ></a>
+            </div>
+            <div>
+              <a href="https://dribbble.com"><i class="bxl bx-dribbble"></i></a>
+            </div>
+            <div>
+              <a href="https://www.github.com/Shanu-React-dev"
+                ><i class="bxl bx-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="image">
+          <img src="./myimg.jpg" alt="" />
+        </div>
+      </section>
+    </main>
+  </body>
+  <script>
+    var typed2 = new Typed("#profession", {
+      strings: [
+        "Software Engineer",
+        "Designer",
+        "UI UX Developer",
+        "React Developer",
+        "Java Developer",
+      ],
+      typeSpeed: 60,
+      backSpeed: 40,
+      fadeOut: false,
+      loop: true,
+    });
+  </script>
+</html>

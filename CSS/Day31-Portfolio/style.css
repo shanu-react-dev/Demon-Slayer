@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  --maincolor: #320245d0;
+  --textColor: #c994ee;
+  --btnColor: #56b6c6;
+  --fontfamily: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--maincolor);
+}
+nav {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0 0 10px var(--textColor);
+}
+
+.logo {
+  width: 20%;
+  height: 100%;
+  color: var(--textColor);
+  font-size: 28px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo > span {
+  color: #fff;
+  margin-right: 10px;
+}
+
+.navlist {
+  height: 100%;
+  width: 40%;
+}
+
+.navlist > ul {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+ul li {
+  padding: 4px;
+}
+ul a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+ul > li:hover {
+  transform: translateY(-2px);
+  box-shadow: 2px 2px 2px black;
+  border-radius: 4px;
+}
+
+nav > .btn {
+  height: 100%;
+  width: 13%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn button {
+  padding: 10px 25px;
+  border-radius: 7px;
+  transition: 0.7s;
+  background-color: #c994ee;
+  color: var(--maincolor);
+  font-weight: 700;
+  border: 2px solid var(--maincolor);
+  cursor: pointer;
+}
+
+.btn button:hover {
+  background-color: transparent;
+  color: #fff;
+}
