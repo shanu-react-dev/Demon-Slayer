@@ -4,19 +4,23 @@
   box-sizing: border-box;
 }
 .box {
-  height: 200px;
+  /* height: 200px;
   width: 200px;
   position: absolute;
   background-color: yellow;
   animation-name: moveBox;
   animation-timing-function: ease-out;
-  animation-duration: 4s;
+  animation-duration: 10s; */
   /* animation-iteration-count: 4; */
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+  /* animation-iteration-count: infinite;
+  animation-direction: alternate; */
+  /* animation-direction: alternate-reverse; */
+  /* animation-direction: reverse; */
+  /* animation-delay: 2s;
+  animation-fill-mode: both; */
 }
 
-@keyframes moveBox {
+/* @keyframes moveBox {
   from {
     top: 0;
     left: 0;
@@ -24,5 +28,75 @@
   to {
     top: 0;
     left: calc(100vw - 200px);
+  }
+} */
+
+/* @keyframes moveBox {
+  0% {
+    top: 0;
+    left: 0;
+    background-color: yellow;
+  }
+  25% {
+    top: 0;
+    left: calc(100vw - 200px);
+    background-color: blue;
+  }
+  50% {
+    top: calc(100vh - 200px);
+    left: calc(100vw - 200px);
+    background-color: pink;
+    border-radius: 50% 0;
+  }
+  75% {
+    top: calc(100vh - 200px);
+    left: 0;
+    background-color: crimson;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    background-color: blueviolet;
+  }
+} */
+
+.mainbx {
+  height: 50px;
+  width: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 2px solid red;
+}
+.mainbx > .animationBox {
+  width: 30px;
+  height: 45px;
+  border: 2px solid blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.mainbx .movebox {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background-color: black;
+  border-radius: 100%;
+  animation-name: move;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move {
+  from {
+    top: 0;
+    left: calc(50% - 5px);
+  }
+  to {
+    top: 100%;
+    left: calc(50% - 5px);
   }
 }
