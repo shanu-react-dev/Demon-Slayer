@@ -31,4 +31,4 @@ _There are total 7 primitive datatypes in JavaScript._
 
 ## How to use JavaScript
 
-_First create a file having extension `.js` to print anything as an output we can write here `console.log()`_
+_First create a file having extension `.js`. to print anything as an output we can write here `console.log()`. It is a statement printing method where console is an object and log is a method used to print the output._
