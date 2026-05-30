@@ -57,3 +57,51 @@ _Operators in JavaScript or any porgramming language is a predefined symbol used
       | null | null | number | `0 + 0 = 0` |
 
       _In JavaScript, arithmetic operators generally try to convert operands to numbers and produce a numeric result. The main exception is the + operator, which can perform string concatenation._
+
+   2. **Subtraction:** The subtraction operator is always used to perform subtraction between two operands.
+      | First Operand | Second Operand | Result Type | Notes |
+      | ------------- | -------------- | -------------- | ---------------------------------------- |
+      | number | number | number | Numeric subtraction |
+      | number | string | number | String → number |
+      | number | boolean | number | Boolean → number |
+      | number | bigint | Error | Cannot mix BigInt and Number |
+      | number | symbol | Error | Cannot convert Symbol |
+      | number | undefined | number (`NaN`) | `undefined → NaN` |
+      | number | null | number | `null → 0` |
+      | string | number | number | String → number |
+      | string | string | number | Both converted to numbers |
+      | string | boolean | number | Numeric conversion |
+      | string | bigint | Error | Cannot mix BigInt and Number |
+      | string | symbol | Error | Cannot convert Symbol |
+      | string | undefined | number (`NaN`) | Invalid numeric conversion |
+      | string | null | number | `null → 0` |
+      | boolean | number | number | `true=1`, `false=0` |
+      | boolean | string | number | Numeric conversion |
+      | boolean | boolean | number | `1-1`, `1-0`, etc. |
+      | boolean | bigint | Error | Cannot mix BigInt and Number |
+      | boolean | symbol | Error | Cannot convert Symbol |
+      | boolean | undefined | number (`NaN`) | Invalid conversion |
+      | boolean | null | number | `null → 0` |
+      | bigint | number | Error | Cannot mix BigInt and Number |
+      | bigint | string | Error\* | Unless string can be converted to BigInt |
+      | bigint | boolean | Error | Cannot mix BigInt and Number |
+      | bigint | bigint | bigint | BigInt subtraction |
+      | bigint | symbol | Error | Invalid conversion |
+      | bigint | undefined | Error | Invalid conversion |
+      | bigint | null | Error | Invalid conversion |
+      | symbol | any | Error | Symbol cannot be converted |
+      | undefined | number | number (`NaN`) | `NaN - x` |
+      | undefined | string | number (`NaN`) | `NaN - x` |
+      | undefined | boolean | number (`NaN`) | `NaN - x` |
+      | undefined | bigint | Error | Invalid conversion |
+      | undefined | symbol | Error | Invalid conversion |
+      | undefined | undefined | number (`NaN`) | |
+      | undefined | null | number (`NaN`) | |
+      | null | number | number | `0 - x` |
+      | null | string | number | String → number |
+      | null | boolean | number | `0 - bool` |
+      | null | bigint | Error | Invalid conversion |
+      | null | symbol | Error | Invalid conversion |
+      | null | undefined | number (`NaN`) | |
+      | null | null | number | `0 - 0 = 0` |
+   3. **Multiplication:** This operator is used to perform multiplication between two operands using `*` Symbol.
