@@ -105,3 +105,21 @@ _Operators in JavaScript or any porgramming language is a predefined symbol used
       | null | undefined | number (`NaN`) | |
       | null | null | number | `0 - 0 = 0` |
    3. **Multiplication:** This operator is used to perform multiplication between two operands using `*` Symbol.
+   4. **Division:** This operator is used to perform division between two operands and give the quotient as a result either in decimal or integer value.
+   5. **Modulus:** It is similar to division but it returns remainder as a result. If the number is divisible then it will be returning 0 else it will be giving remainder as a result.
+   6. **Exponential:** This operator is used to add power to the first operand. It returns exponential values such as square of 2 or cube of 5 or etc.
+
+2. **Assignment Operators:** Assignment Operators in JavaScript is used to assign the values or update the values to an already defined variables or new variables.
+3. **Comparison Operator:** This is also known as relational operator and it is used to compare two variables or values. it will always return one boolean value either true or false. Few comparison operators as follows.
+   1. **Less than `<`**
+   2. **Greater than `>`**
+   3. **Less than equals to `<=`**
+   4. **Greater than equals to `>=`**
+   5. **Double equals to `==`**
+   6. **Triple equals to `===`**
+
+   _Double equals to and triple equals to both are equality operator used to check the equality of values and datatypes. Double equals to `==` will compare only values if both are equal then it will return true else false whereas triple equals to `===` will compare value along with its type. If both values and the type of those data are equal then only it will return true else false. It is also known as strict equals to._
+
+4. **Logical Operators:** Logical operators in JavaScript is used to compare two or more logics or expressions. It is used to group multiple logics. It compares the truthy values and falsy of two or more expressions or values. There are three logical operators in JavaScript as follows.
+   1. **AND (&&):** This operator compares two or more expressions or values and it returns the last truthy values if all values are truthy values else it will return the falsy values.
+   2. **OR (||):** THis operator looks for the first truthy values in multiple expressions if we got the first truthy value it will not check rest of the values or expressions. It will return the first truthy values if all values or expression returns falsy values then it will return the last falsy values.

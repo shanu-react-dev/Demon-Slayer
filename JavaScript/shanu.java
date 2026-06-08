@@ -1,6 +1,10 @@
 public class shanu {
+    String name = "Shanu";
+    int id = 21;
+    long contact = 1234567890;
+
     public static void main(String[] args) {
-        float a = 0.3f;
-        System.out.println(a == (0.1 + 0.2));
+        shanu s = new shanu();
+        System.out.println(s.name);
     }
 }
