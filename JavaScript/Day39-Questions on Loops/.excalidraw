@@ -1,0 +1,86 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
+  "elements": [
+    {
+      "id": "XkGKv3Y-9O6Rcq6SC019f",
+      "type": "rectangle",
+      "x": 250.55555725097656,
+      "y": 75.78124237060547,
+      "width": 536.3280487060547,
+      "height": 360,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#ffc9c9",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a0",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 970093272,
+      "version": 388,
+      "versionNonce": 1063833768,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "QwWZlOstSqY5PVAyr15LY"
+        }
+      ],
+      "updated": 1781164302087,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "QwWZlOstSqY5PVAyr15LY",
+      "type": "text",
+      "x": 382.9596481323242,
+      "y": 80.78124237060547,
+      "width": 271.5198669433594,
+      "height": 350,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#ffc9c9",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a1",
+      "roundness": null,
+      "seed": 524237224,
+      "version": 141,
+      "versionNonce": 509115304,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1781164302087,
+      "link": null,
+      "locked": false,
+      "text": "let n = 4;\nfor (let i = n; i > 0; i--) {\n  //   console.log(i);\n  let star = \"\";\n  let space = \"\";\n  for (let j = n; j >= 1; j--) {\n    if (i + j > n) {\n      star += \" *\";\n    } else {\n      space += \"  \";\n    }\n  }\n  console.log(space, star);\n}",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "XkGKv3Y-9O6Rcq6SC019f",
+      "originalText": "let n = 4;\nfor (let i = n; i > 0; i--) {\n  //   console.log(i);\n  let star = \"\";\n  let space = \"\";\n  for (let j = n; j >= 1; j--) {\n    if (i + j > n) {\n      star += \" *\";\n    } else {\n      space += \"  \";\n    }\n  }\n  console.log(space, star);\n}",
+      "autoResize": true,
+      "lineHeight": 1.25
+    }
+  ],
+  "appState": {
+    "gridSize": 20,
+    "gridStep": 5,
+    "gridModeEnabled": false,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}
