@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  height: auto;
+  width: 100%;
+  background-color: #fff;
+}
+
+nav {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav > .logo {
+  height: 100%;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  /* background-color: yellow; */
+}
+.logo > .trBox {
+  height: 100%;
+  width: 70px;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-direction: column;
+}
+.trBox > div:last-child {
+  /* line-height: 0px; */
+  /* color: blue;
+  margin-top: -8px; */
+}
+
+.logo h3 {
+  font-size: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav > .navlist {
+  height: 100%;
+  width: 40%;
+  /* background-color: lightpink; */
+}
+
+.navlist > ul {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+nav > .btn {
+  height: 100%;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: lightsalmon; */
+}
+
+.btn > button {
+  padding: 15px 30px;
+  background-color: green;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.secondPage {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.secondPage > div {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: lightsalmon;
+}
+
+.secondPage > div > .cardContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 10px;
+  padding: 50px;
+}
+
+.card {
+  height: 300px;
+  width: 270px;
+  border: 2px solid blue;
+  margin: 10px;
+}
+
+.card .iconBox {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  border: 2px solid green;
+}
+
+.iconBox > i:first-child {
+  font-size: 40px;
+  color: #fff;
+}
+
+.iconBox > i:last-child {
+  font-size: 20px;
+  position: absolute;
+  top: -10px;
+  right: 0px;
+  color: #fff;
+}
