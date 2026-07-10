@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./script.js" defer></script>
+
+    <style>
+      .parent {
+        height: 500px;
+        width: 500px;
+        display: grid;
+        place-items: center;
+        background-color: lightblue;
+      }
+      .child {
+        height: 70%;
+        width: 70%;
+        display: grid;
+        place-items: center;
+        background-color: lightpink;
+      }
+
+      .grandchild {
+        height: 70%;
+        width: 70%;
+        background-color: lightsteelblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child">
+        <div class="grandchild">
+          <h1>grandChild</h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
