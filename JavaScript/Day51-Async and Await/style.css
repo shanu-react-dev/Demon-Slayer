@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+  height: 70px;
+  width: 100%;
+  background-color: #2c2c2c;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  justify-content: space-evenly;
+}
+
+nav > .logo {
+  height: 100%;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+nav > .navlist {
+  height: 100%;
+  width: 40%;
+}
+.navlist > ul {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+  font-weight: 600;
+}
+li {
+  transition: all 1s;
+}
+li > a {
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+
+li > a:hover {
+  color: rgb(229, 171, 171);
+}
+li:hover {
+  transform: translateY(-3px);
+}
+
+nav > .btnBox {
+  height: 100%;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btnBox > button {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 600;
+  border: 2px solid rgb(229, 171, 171);
+  border-radius: 20px 0;
+  font-size: 18px;
+  transition: all 0.7s;
+  cursor: pointer;
+}
+
+.btnBox > button:hover {
+  background-color: rgb(229, 171, 171);
+  color: #fff;
+}
+
+/* Home Page starts here */
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #2c2c2c42;
+}
+body > .products {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: lightseagreen;
+}
+
+.products > .card {
+  height: 400px;
+  width: 350px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: yellow;
+}
+
+.card img {
+  height: 240px;
+  width: 95%;
+}
